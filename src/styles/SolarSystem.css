@@ -1,0 +1,98 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Overpass:wght@700&family=Roboto:wght@300&display=swap";
+@import "https://fonts.googleapis.com/css?family=Droid+Serif|Roboto:300";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
+
+.SolarSystem {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.main-heading {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  padding: 2%;
+  margin-bottom: 7%;
+}
+
+.all-planets {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.planet {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 11%;
+}
+
+.planet-info {
+  background-color: #e8e8e8;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 4px 5px 0px 0px #008080;
+  padding: 1%;
+  padding-bottom: 2%;
+}
+
+.planet-name {
+  background-color: #008080;
+  padding: 2%;
+  margin-right: 100%;
+  padding-right: 10%;
+  box-shadow: 4px 5px 0px 0px #ffffff;
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6em;
+}
+
+.planet-info p {
+  color: black;
+  width: 95%;
+  margin: 0 auto;
+  padding: 3%;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5em;
+}
+
+.lm-button {
+  padding: 5px;
+  margin-left: 4.5%;
+  width: 20%;
+  background: none;
+  border: solid 3px #008080;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.planet-img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+@media (min-width: 680px) {
+  .planet-info {
+    width: 60%;
+    height: 200px;
+  }
+  .planet-info p {
+    padding: 1%;
+  }
+
+  .planet-img {
+    margin-top: -3%;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

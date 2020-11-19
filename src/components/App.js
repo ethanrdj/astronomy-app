@@ -1,5 +1,7 @@
 import "../styles/App.css";
 import Apod from "./Apod";
+import SSIntro from "./SS-Intro";
+import SolarSystem from "./SolarSystem";
 import Particles from "react-particles-js";
 
 const App = () => {
@@ -52,11 +54,8 @@ const App = () => {
         params={particleParams}
         style={{ position: "relative", height: "100%" }}
       />
-      <p>
-        This is a long paragraph This is a long paragraph This is a long
-        paragraph This is a long paragraph This is a long paragraph This is a
-        long paragraph This is a long paragraph This is a long paragraph
-      </p>
+      <SSIntro />
+      <SolarSystem />
     </div>
   );
 };
