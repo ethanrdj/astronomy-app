@@ -14,20 +14,20 @@
   padding: 3%;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-weight: lighter;
 }
 
 .ss-intro h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: lighter;
 }
 
 .ss-intro p {
   font-family: "Cardo", serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: lighter;
   color: black;
   width: 85%;
@@ -44,4 +44,22 @@
 
 .scroll-button {
   padding: 2%;
+}
+
+@media (min-width: 800px) {
+  .ss-intro h1 {
+    font-size: 2.5em;
+  }
+
+  .ss-intro p {
+    font-size: 1.2em;
+  }
+
+  .ss-intro h3 {
+    font-size: 1.8em;
+  }
+
+  .ss-intro h5 {
+    font-size: 1.4em;
+  }
 }

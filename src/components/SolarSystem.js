@@ -14,7 +14,7 @@ import "../styles/SolarSystem.css";
 
 const SolarSystem = () => {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 1000, offset: 150 });
   }, []);
 
   return (
@@ -150,7 +150,9 @@ const SolarSystem = () => {
               <p>
                 This dynamic planet has seasons, polar ice caps, canyons,
                 extinct volcanoes, and evidence that it was even more active in
-                the past.
+                the past. Mars is one of the most explored bodies in our solar
+                system, and it's the only planet where we've sent rovers to roam
+                the alien landscape.
               </p>{" "}
               <button className="lm-button">Learn more</button>
             </div>

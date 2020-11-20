@@ -1,8 +1,11 @@
-import "../styles/App.css";
+import React from "react";
+import Landing from "./Landing";
 import Apod from "./Apod";
 import SSIntro from "./SS-Intro";
 import SolarSystem from "./SolarSystem";
 import Particles from "react-particles-js";
+
+import "../styles/App.css";
 
 const App = () => {
   const particleParams = {
@@ -50,10 +53,6 @@ const App = () => {
   };
   return (
     <div className="App">
-      <Particles
-        params={particleParams}
-        style={{ position: "relative", height: "100%" }}
-      />
       <SSIntro />
       <SolarSystem />
     </div>

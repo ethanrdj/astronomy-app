@@ -5,10 +5,12 @@
 
 .SolarSystem {
   color: white;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  background-image: url("../images/space-image.jpg");
+  background-size: contain;
 }
 
 .main-heading {
@@ -17,7 +19,7 @@
   text-transform: uppercase;
   font-size: 2.2em;
   padding: 2%;
-  margin-bottom: 7%;
+  margin-bottom: -8%;
 }
 
 .all-planets {
@@ -63,25 +65,30 @@
 }
 
 .lm-button {
-  padding: 5px;
+  padding: 2px;
   margin-left: 4.5%;
-  width: 20%;
-  background: none;
-  border: solid 3px #008080;
+  width: 40%;
+  background-color: #008080;
+  border: solid 3px #006767;
+  border-radius: 5px;
+  color: white;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
-  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: lighter;
+  margin-top: 1%;
 }
 .planet-img {
   width: 350px;
   border-radius: 50%;
+  margin: 0 auto;
 }
 
 @media (min-width: 680px) {
   .planet-info {
     width: 60%;
-    height: 200px;
+    height: 40%;
   }
   .planet-info p {
     padding: 1%;
@@ -94,5 +101,16 @@
   .left {
     display: flex;
     flex-direction: row-reverse;
+    height: 40%;
+  }
+
+  .lm-button {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .all-planets {
+    width: 85%;
   }
 }
