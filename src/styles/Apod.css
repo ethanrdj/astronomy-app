@@ -1,4 +1,38 @@
+.Apod {
+  width: 100vw;
+  background-color: #e8e8e8;
+  color: black;
+}
+
+.apod-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.Apod h1 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.Apod h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  margin: 0;
+  margin-bottom: 3%;
+}
+
+.Apod p {
+  font-family: "Cardo", serif;
+  width: 90%;
+}
+
 .apodImg {
-  width: auto;
-  height: 100vh;
+  width: 70%;
+  border: 15px solid white;
+  box-shadow: 0 4px 8px 0 rgba(153, 153, 153, 0.425),
+    0 6px 20px 0 rgba(56, 56, 56, 0.89);
 }

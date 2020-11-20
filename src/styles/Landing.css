@@ -1,5 +1,41 @@
+@import "https://fonts.googleapis.com/css2?family=Cardo&family=Oswald&family=Ubuntu:wght@300;400&display=swap";
+
 .Landing {
+  margin: 0;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-image: url("../images/main-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: table;
+}
+
+.headers {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.header {
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  text-shadow: 2px 2px 5px black;
+}
+
+.code-by {
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-family: "Cardo", serif;
+  font-size: 1.4em;
+  text-shadow: 2px 2px 5px black;
 }
