@@ -1,0 +1,72 @@
+.Apod {
+  width: 100vw;
+  background-color: #e8e8e8;
+  overflow-x: hidden;
+}
+
+.Apod h1 {
+  background-color: #00b4a3;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 5%;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  font-size: 2em;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.Apod h3 {
+  background-color: #008080;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 5%;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.Apod h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  font-size: 1.8em;
+  text-align: center;
+  background-color: #00b4a3;
+  color: white;
+}
+
+.apodImg {
+  width: 90%;
+  margin: 3%;
+  box-shadow: 0 4px 8px 0 rgba(153, 153, 153, 0.425),
+    0 6px 20px 0 rgba(56, 56, 56, 0.89);
+  border-radius: 8px;
+}
+
+.apod-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  background-color: #e8e8e8;
+}
+
+.apod-info {
+  background-color: #008080;
+  color: white;
+  width: 90%;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.Apod p {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+}

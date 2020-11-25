@@ -23,11 +23,27 @@
   font-weight: lighter;
   margin: 0;
   margin-bottom: 3%;
+  width: 90%;
+  text-align: center;
+}
+
+.Apod h2 {
+  width: 94%;
+  margin-top: 3%;
+  text-align: center;
+  font-size: 1.7em;
 }
 
 .Apod p {
-  font-family: "Cardo", serif;
-  width: 90%;
+  font-family: "Raleway", sans-serif;
+  width: 80%;
+  padding: 2%;
+  line-height: 1.5em;
+  font-weight: lighter;
+  border: #008080 solid 3px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(153, 153, 153, 0.425),
+    0 6px 20px 0 rgba(56, 56, 56, 0.89);
 }
 
 .apodImg {

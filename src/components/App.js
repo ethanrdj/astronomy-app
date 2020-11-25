@@ -16,13 +16,13 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Landing}>
           <Landing />
+          <Apod />
         </Route>
 
-        <Route>
-          <SSIntro exact path="/solarsystem" component={SSIntro} />
+        <Route exact path="/solarsystem" component={SSIntro}>
+          <SSIntro />
         </Route>
       </Switch>
-      <Apod />
     </div>
   );
 };
