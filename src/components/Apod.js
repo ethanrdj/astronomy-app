@@ -22,7 +22,7 @@ const Apod = () => {
   return (
     <div className="Apod">
       <h1>Astronomy Picture of The Day</h1>
-      <h3>Each day NASA upload an astronomical photos, here is todays..</h3>
+      <h3>Each day NASA uploads an astronomical photo, here is todays..</h3>
       <div className="apod-data">
         <img className="apodImg" src={data.url} alt="apod"></img>
         <div className="apod-info">
