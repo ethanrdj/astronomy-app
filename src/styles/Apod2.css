@@ -1,6 +1,6 @@
 .Apod {
   width: 100vw;
-  padding-bottom: 2%;
+  padding-bottom: 7%;
   background-color: #e8e8e8;
   overflow-x: hidden;
 }
@@ -87,6 +87,7 @@
   .Apod {
     background-image: url("../images/space-image.jpg");
     background-size: contain;
+    padding-top: 3%;
   }
 
   .Apod h1 {
@@ -118,13 +119,42 @@
   .apod-info {
     width: 70%;
     border-radius: 0;
-    padding: 1%;
+    padding: 3.5%;
+  }
+
+  .Apod p {
+    font-size: 1.1em;
+    line-height: 1.1em;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+}
+
+@media (min-width: 1400px) {
+  .Apod h1 {
+    font-size: 2.8em;
+    width: 40%;
+    padding: 2.5%;
+    margin-left: 30%;
+  }
+
+  .Apod h3 {
+    width: 40%;
+    padding: 2%;
+    margin-top: -1.5%;
+    margin-left: 40%;
+  }
+  .apod-data {
+    width: 65%;
   }
 
   .Apod p {
     font-size: 0.9em;
-    line-height: 1.1em;
-    letter-spacing: 1px;
-    font-weight: lighter;
+  }
+}
+
+@media (min-width: 1900px) {
+  .apod-info {
+    padding: 5.9%;
   }
 }

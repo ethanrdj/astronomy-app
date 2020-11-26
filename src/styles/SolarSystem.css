@@ -12,6 +12,7 @@
   background-image: url("../images/space-image.jpg");
   background-size: contain;
   overflow-x: hidden;
+  padding-bottom: 17%;
 }
 
 .main-heading {

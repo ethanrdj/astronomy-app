@@ -4,7 +4,8 @@ import NavBar from "./NavBar";
 import Landing from "./Landing";
 import Apod from "./Apod";
 import SSIntro from "./SS-Intro";
-import SolarSystem from "./SolarSystem";
+import Footer from "./Footer";
+import Neptune from "./Neptune";
 import Particles from "react-particles-js";
 
 import "../styles/App.css";
@@ -22,7 +23,9 @@ const App = () => {
         <Route exact path="/solarsystem" component={SSIntro}>
           <SSIntro />
         </Route>
+        <Route exact path="/neptune" component={Neptune}></Route>
       </Switch>
+      <Footer />
     </div>
   );
 };
