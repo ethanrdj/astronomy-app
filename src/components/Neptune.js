@@ -1,37 +1,61 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
-import Nepimg from "../images/neptune-page.jpg";
+import { useLocation, Link as LinkRRD } from "react-router-dom";
+import Nepimg from "../images/neptune.png";
+import Nepimg2 from "../images/neptune2.png";
+import Nepimg3 from "../images/neptune3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronCircleDown,
+  faChevronCircleRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 import "../styles/Planets.css";
 
 const Neptune = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="Planet">
       <div className="image-div">
         <img src={Nepimg} alt="neptune" className="img-planet"></img>
-        <Link
-          activeClass="active"
-          to="planet"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <span className="scroll-button-planet">
-            <FontAwesomeIcon
-              icon={faChevronCircleDown}
-              size="2x"
-              color="#008080"
-              style={{ cursor: "pointer" }}
-            />
-          </span>
-        </Link>
+        <div className="arrows neptune">
+          <div className="scroll-button-planet">
+            <Link
+              activeClass="active"
+              to="planet"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <FontAwesomeIcon
+                icon={faChevronCircleDown}
+                size="2x"
+                color="#008080"
+                style={{ cursor: "pointer" }}
+              />
+            </Link>
+          </div>
+          <div className="right-arrow">
+            <LinkRRD to="/uranus">
+              <FontAwesomeIcon
+                icon={faChevronCircleRight}
+                size="2x"
+                color="#008080"
+                style={{ cursor: "pointer" }}
+              />
+            </LinkRRD>
+          </div>
+        </div>
       </div>
       <div className="all-data" id="planet">
-        <h1 className="name-planet">Neptune</h1>
         <div className="planet-paragraphs">
+          <h1 className="planet-main-headers">Neptune</h1>
           <div className="info-type">
             <h3>Size and Distance</h3>
             <hr />
@@ -83,7 +107,7 @@ const Neptune = () => {
         </div>
 
         <div className="ff-all">
-          <h3 className="ff-main-header">Fast Facts</h3>
+          <h3 className="planet-main-headers">Fast Facts</h3>
           <div className="fast-facts">
             <h4>Day length</h4>
             <p>16 Hours</p>
@@ -96,10 +120,10 @@ const Neptune = () => {
             <h4>Number of Moons</h4>
             <p>14</p>
           </div>
+          <img src={Nepimg2} alt="nep2" className="bottom-img"></img>
+          <img src={Nepimg3} alt="nep3" className="bottom-img"></img>
         </div>
       </div>
-
-      <hr className="bottom-hr"></hr>
     </div>
   );
 };

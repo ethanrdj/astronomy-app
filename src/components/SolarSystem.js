@@ -7,6 +7,7 @@ import mars from "../images/mars.png";
 import earth from "../images/earth.png";
 import venus from "../images/venus.png";
 import mercury from "../images/mercury.png";
+import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -51,7 +52,9 @@ const SolarSystem = () => {
                 Neptune completed its first 165-year orbit since its discovery
                 in 1846.
               </p>
-              <button className="lm-button">Learn more</button>
+              <Link to="/neptune">
+                <button className="lm-button">Learn more</button>
+              </Link>
             </div>
             <img src={neptune} alt="neptune" className="planet-img"></img>
           </div>
@@ -76,7 +79,9 @@ const SolarSystem = () => {
                   of its orbit. This unique tilt makes Uranus appear to spin on
                   its side, orbiting the Sun like a rolling ball.
                 </p>
-                <button className="lm-button">Learn more</button>
+                <Link to="/uranus">
+                  <button className="lm-button">Learn more</button>
+                </Link>
               </div>
               <img src={uranus} alt="uranus" className="planet-img"></img>
             </div>
@@ -100,8 +105,10 @@ const SolarSystem = () => {
                 none are as spectacular or as complex as Saturn's. Like fellow
                 gas giant Jupiter, Saturn is a massive ball made mostly of
                 hydrogen and helium.
-              </p>{" "}
-              <button className="lm-button">Learn more</button>
+              </p>
+              <Link to="/saturn">
+                <button className="lm-button">Learn more</button>
+              </Link>
             </div>
 
             <img src={saturn} alt="saturn" className="planet-img"></img>
@@ -116,7 +123,6 @@ const SolarSystem = () => {
             </h2>
             <div className="left">
               <div className="planet-info">
-                {" "}
                 <p>
                   Jupiter is the fifth planet from our Sun and is, by far, the
                   largest planet in the solar system – more than twice as
@@ -127,8 +133,10 @@ const SolarSystem = () => {
                   of ammonia and water, floating in an atmosphere of hydrogen
                   and helium. Jupiter’s iconic Great Red Spot is a giant storm
                   bigger than Earth that has raged for hundreds of years.
-                </p>{" "}
-                <button className="lm-button">Learn more</button>
+                </p>
+                <Link to="/jupiter">
+                  <button className="lm-button">Learn more</button>
+                </Link>
               </div>
 
               <img src={jupiter} alt="jupiter" className="planet-img"></img>
@@ -153,8 +161,10 @@ const SolarSystem = () => {
                 the past. Mars is one of the most explored bodies in our solar
                 system, and it's the only planet where we've sent rovers to roam
                 the alien landscape.
-              </p>{" "}
-              <button className="lm-button">Learn more</button>
+              </p>
+              <Link to="/mars">
+                <button className="lm-button">Learn more</button>
+              </Link>
             </div>
             <img src={mars} alt="mars" className="planet-img"></img>
           </div>
@@ -168,7 +178,6 @@ const SolarSystem = () => {
             </h2>
             <div className="left">
               <div className="planet-info">
-                {" "}
                 <p>
                   Our home planet is the third planet from the Sun, and the only
                   place we know of so far that’s inhabited by living things.
@@ -180,7 +189,9 @@ const SolarSystem = () => {
                   Earth is the biggest of the four planets closest to the Sun,
                   all of which are made of rock and metal.
                 </p>
-                <button className="lm-button">Learn more</button>
+                <Link to="/earth">
+                  <button className="lm-button">Learn more</button>
+                </Link>
               </div>
               <img src={earth} alt="earth" className="planet-img"></img>
             </div>
@@ -206,7 +217,9 @@ const SolarSystem = () => {
                 to melt lead. Glimpses below the clouds reveal volcanoes and
                 deformed mountains.
               </p>
-              <button className="lm-button">Learn more</button>
+              <Link to="/venus">
+                <button className="lm-button">Learn more</button>
+              </Link>
             </div>
             <img src={venus} alt="venus" className="planet-img"></img>
           </div>
@@ -229,7 +242,9 @@ const SolarSystem = () => {
                   three times as large as it does when viewed from Earth, and
                   the sunlight would be as much as seven times brighter.
                 </p>
-                <button className="lm-button">Learn more</button>
+                <Link to="/mercury">
+                  <button className="lm-button">Learn more</button>
+                </Link>
               </div>
 
               <img src={mercury} alt="mercury" className="planet-img"></img>

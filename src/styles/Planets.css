@@ -1,26 +1,40 @@
 .Planet {
   overflow-x: hidden;
   width: 100%;
+  margin-bottom: 15%;
+}
+
+.arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 95%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.neptune {
+  width: 67%;
+  padding: 0;
+  margin-left: 33%;
+}
+
+.mercury {
+  width: 67%;
+  padding: 0;
+  margin-right: 33%;
 }
 
 .img-planet {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  width: 80%;
 }
 
 .image-div {
   height: 100vh;
-}
-
-.scroll-button-planet {
-  position: absolute;
-  top: 95%;
-  left: 47%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .all-data {
@@ -29,9 +43,10 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
-.name-planet {
+.planet-main-headers {
   background-color: #008080;
   padding: 2%;
   box-shadow: 4px 5px 0px 0px #ffffff;
@@ -39,6 +54,7 @@
   text-transform: uppercase;
   font-size: 1.6em;
   width: 50%;
+  align-self: flex-start;
 }
 
 .info-type {
@@ -80,17 +96,6 @@
   margin-bottom: 7%;
 }
 
-.ff-main-header {
-  background-color: #008080;
-  padding: 2%;
-  margin-right: 100%;
-  box-shadow: 4px 5px 0px 0px #ffffff;
-  font-family: "Overpass", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.6em;
-  width: 50%;
-}
-
 .fast-facts h4 {
   color: white;
   width: 50%;
@@ -112,11 +117,81 @@
   padding-bottom: 5%;
 }
 
-.bottom-hr {
-  width: 80%;
-  border: 2px solid lightgray;
-  border-radius: 5px;
-  margin: 0 auto;
-  margin-top: 10%;
-  margin-bottom: 20%;
+.ff-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-img {
+  width: 300px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 475px) {
+  .planet-main-headers {
+    width: 40%;
+  }
+}
+
+@media (min-width: 750px) {
+  .image-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-planet {
+    width: 50%;
+  }
+
+  .info-type {
+    width: 80%;
+  }
+
+  .fast-facts {
+    width: 60%;
+  }
+}
+
+@media (min-width: 850px) {
+  .all-data {
+    flex-direction: row;
+  }
+
+  .img-planet {
+    width: 40%;
+  }
+
+  .planet-paragraphs {
+    width: 60%;
+  }
+
+  .info-type {
+    width: 90%;
+  }
+
+  .ff-all {
+    width: 50%;
+  }
+
+  .fast-facts {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-planet {
+    width: 30%;
+  }
+
+  .all-data {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .all-data {
+    width: 60%;
+  }
 }
