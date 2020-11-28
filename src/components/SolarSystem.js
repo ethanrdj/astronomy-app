@@ -7,6 +7,7 @@ import mars from "../images/mars.png";
 import earth from "../images/earth.png";
 import venus from "../images/venus.png";
 import mercury from "../images/mercury.png";
+import sun from "../images/sun.png";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -252,6 +253,7 @@ const SolarSystem = () => {
           </div>
         </div>
       </div>
+      <img data-aos="fade-up" src={sun} className="sun" alt="sun"></img>
     </div>
   );
 };

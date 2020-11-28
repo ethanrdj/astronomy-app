@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import telescope from "../images/telescope.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "../styles/Footer.css";
 
 const Footer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000, offset: 150 });
+  }, []);
+
   return (
     <div className="Footer">
       <div className="footer-all">
-        <div className="footer-item">
+        <div data-aos="fade-up" className="footer-item">
           <h3 className="f-header">More from Me</h3>
           <p className="footer-para">
             I have been working on other projects, click the telescope to view
@@ -17,7 +23,7 @@ const Footer = () => {
             <img src={telescope} alt="telescope" className="icon"></img>
           </a>
         </div>
-        <div className="footer-item">
+        <div data-aos="fade-up" className="footer-item">
           <h3 className="f-header">More information</h3>
           <p className="footer-para">
             I have used NASAs website to gather all of the information, you can
@@ -30,7 +36,7 @@ const Footer = () => {
             <img src={telescope} alt="telescope" className="icon"></img>
           </a>
         </div>
-        <div className="footer-item">
+        <div data-aos="fade-up" className="footer-item">
           <h3 className="f-header">More APIs</h3>
           <p className="footer-para">
             The APOD picture uses one of NASAs open APIs, click the telescope to

@@ -27,7 +27,7 @@ const Apod = () => {
   }, []);
 
   return (
-    <div className="Apod">
+    <div className="Apod" id="apod">
       <h1 data-aos="fade-right">Astronomy Picture of The Day</h1>
       <h3 data-aos="fade-left">
         Each day NASA uploads an astronomical photo, here is todays..

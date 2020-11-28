@@ -13,8 +13,9 @@
   margin-right: 1rem;
   width: 100%;
   list-style: none;
-  color: white;
+  color: #004d4d;
   font-size: 1.2em;
+  cursor: pointer;
 }
 
 a:link {

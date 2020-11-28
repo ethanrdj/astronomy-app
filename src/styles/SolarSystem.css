@@ -87,6 +87,12 @@
   margin: 0 auto;
 }
 
+.sun {
+  width: 100%;
+  margin-bottom: -20%;
+  margin-top: 20%;
+}
+
 @media (min-width: 680px) {
   .planet-info {
     width: 60%;
