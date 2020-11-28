@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link as LinkRRD, useLocation } from "react-router-dom";
 import { Link } from "react-scroll";
+import ReorderIcon from "@material-ui/icons/Reorder";
 
 import "../styles/NavBar.css";
 
 const NavBar = () => {
+  const [showLinks, setShowLinks] = useState(false);
   const location = useLocation();
 
   return (
-    <nav className="NavBar">
-      <ul className="all-nav">
+    <div className="NavBar">
+      <ul className="all-nav" id={showLinks ? "hidden" : ""}>
         {location.pathname === "/" ? (
           <Link
             activeClass="active"
@@ -19,18 +21,27 @@ const NavBar = () => {
             offset={0}
             duration={500}
           >
-            <li className="nav-item">APOD</li>
+            <li className="nav-item" onClick={() => setShowLinks(!showLinks)}>
+              APOD
+            </li>
           </Link>
         ) : (
           <LinkRRD to="/">
-            <li className="nav-item">HOME</li>
+            <li className="nav-item" onClick={() => setShowLinks(!showLinks)}>
+              HOME
+            </li>
           </LinkRRD>
         )}
         <LinkRRD to="/solarsystem">
-          <li className="nav-item">OUR SOLAR SYSTEM</li>
+          <li className="nav-item" onClick={() => setShowLinks(!showLinks)}>
+            OUR SOLAR SYSTEM
+          </li>
         </LinkRRD>
       </ul>
-    </nav>
+      <button onClick={() => setShowLinks(!showLinks)}>
+        <ReorderIcon />
+      </button>
+    </div>
   );
 };
 
