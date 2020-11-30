@@ -253,7 +253,6 @@ const SolarSystem = () => {
           </div>
         </div>
       </div>
-      <img data-aos="fade-up" src={sun} className="sun" alt="sun"></img>
     </div>
   );
 };
