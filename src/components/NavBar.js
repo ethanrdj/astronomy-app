@@ -22,6 +22,7 @@ const NavBar = () => {
           >
             <li
               className="nav-item"
+              data-testid="apod-link"
               id={showLinks ? "hidden-nav-item" : ""}
               onClick={() => setShowLinks(!showLinks)}
             >

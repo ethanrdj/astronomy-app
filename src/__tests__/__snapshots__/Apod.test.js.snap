@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Apod renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="Apod"
+    data-testid="apod"
+    id="apod"
+  >
+    <h1
+      class="aos-init aos-animate"
+      data-aos="fade-right"
+    >
+      Astronomy Picture of The Day
+    </h1>
+    <h3
+      class="aos-init aos-animate"
+      data-aos="fade-left"
+    >
+      Each day NASA uploads an astronomical photo, here is todays..
+    </h3>
+    <div
+      class="apod-data"
+    >
+      <img
+        alt="apod"
+        class="apodImg aos-init aos-animate"
+        data-aos="fade-right"
+      />
+      <div
+        class="apod-info aos-init aos-animate"
+        data-aos="fade-left"
+      >
+        <h2>
+           - 
+          <br />
+          <span
+            style="font-size: 0.7em; font-style: italic;"
+          />
+        </h2>
+        <p />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
